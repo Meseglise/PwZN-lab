@@ -40,11 +40,10 @@ class Isingmodel():
         return draw
 
     def plot(self, f, draw, i, N):
-        ''' This modules plts the drawuration once passed to it along with time etc '''
         X, Y = np.meshgrid(range(N), range(N))
         plt.pcolormesh(X, Y, draw, shading= 'auto', cmap = 'rainbow')
         plt.axis('off')
-
+        
     def simulate(self):
         N = args.size
         temp = args.valuej
